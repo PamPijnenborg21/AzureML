@@ -68,8 +68,8 @@ def main():
     run.log("Accuracy", np.float(accuracy))
 
     #To save model
-    os.makedirs('outputs', exist_ok = True)
-    joblib.dump(model, outputs/model.joblib)
+    os.makedirs('./outputs', exist_ok = True)
+    joblib.dump(value=model, filename='./outputs/mybestrun.joblib')
 
 if __name__ == '__main__':
     main()
