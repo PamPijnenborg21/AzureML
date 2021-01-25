@@ -29,11 +29,9 @@ Automated Machine Learning (AutoML) is used to automate the entire Machine Learn
 - n_cross_validations: 5
 
 ## Pipeline comparison
-**Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
+The highest accuracy using HyperDrive is 0.9165 with C is 4 and max iterations 200. The highest accuracy of AutoML is 0.9167 with an VotingEnsemble algorithm. 
 
 ## Future work
 Only a limited number of values is included in the RandomParameterSampler, while optimal values may be left out. Furthermore, the chosen termination policy could be altered to experiment whether a more optimal model may result. The data cleaning could be executed differently and feature selection/engineering could be performed different. The number of cross_validation runs could be experimented with. Last but not least, different Machine Learning models could be experimented with. 
 
-## Proof of cluster clean up
-**If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
-**Image of cluster marked for deletion**
+
