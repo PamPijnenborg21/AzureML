@@ -30,6 +30,8 @@ Automated Machine Learning (AutoML) is used to automate the entire Machine Learn
 - label_column_name: y-whether client makes term deposit or not
 - n_cross_validations: 5
 
+The experiment_timeout_minutes is specified with 30 minutes in order to specify the maximum number of minutes the experiment is allowed to run. The task is specified as classification, as the business problem is a classification problem. The training_data is specified as 'df', which stands for the dataframe (short for df). The label_column_name is the column of the dataframe which represents the target (e.g. label) column. The label column name is 'y', which represent whether a clients makes a term deposit or not. The number of cross validations is five. 
+
 The best performing algorithm is EnsembleVoting, which uses multiple algorithms and the majority vote (in case of a classification problem) is the final outcome. As the EnsembleVoting uses multiple algorithms, it breduces bias regarding a single algorithm and using multiple algorithms makes the algorithm robust.
 
 ## Pipeline comparison
